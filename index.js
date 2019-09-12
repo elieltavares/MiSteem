@@ -15,8 +15,9 @@ steem.api.getDiscussionsByCreated({"tag": "kr", "limit": 10}, function(err, resu
     }
 });
 
-let d = new Date();
-let splitText = "KLKKKJKIFHDJIOHF"
-document.body.innerHTML = "<h1>Today's date is " + d + "</h1>"
+window.onload = function(){
+    var name = prompt("What's your name?");
+    var lengthOfName = name.length
 
-document.getElementById("demo").innerHTML=splitText;
+    document.getElementById('output').innerHTML = lengthOfName;
+};
