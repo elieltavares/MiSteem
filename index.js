@@ -16,4 +16,4 @@ steem.api.getDiscussionsByCreated({"tag": "kr", "limit": 10}, function(err, resu
 });
 
 var carName = "Volvo";
-document.getElementById("demo").innerHTML = carName;
+
