@@ -9,15 +9,9 @@ steem.api.getDiscussionsByCreated({"tag": "kr", "limit": 10}, function(err, resu
                 window.permlink = discussion.permlink;
                 window.author = discussion.author;
             }
+             document.getElementById('output').innerHTML = discussion;
         }
     } else {
         console.log(err);
     }
 });
-
-window.onload = function(){
-    var name = prompt("What's your name?");
-    var lengthOfName = name.length
-
-    document.getElementById('output').innerHTML = lengthOfName;
-};
