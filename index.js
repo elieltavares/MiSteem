@@ -15,5 +15,6 @@ steem.api.getDiscussionsByCreated({"tag": "kr", "limit": 10}, function(err, resu
     }
 });
 
-var carName = "Volvo";
+let d = new Date();
+document.body.innerHTML = "<h1>Today's date is " + d + "</h1>"
 
