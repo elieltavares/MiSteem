@@ -1,4 +1,4 @@
-var discussion = {};
+var discussion;
 steem.api.getDiscussionsByCreated({"tag": "kr", "limit": 10}, function(err, result) {
     if (err === null) {
         var i, len = result.length;
